@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>internship editor</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="js/jquery.notebook.css">
+    </head>
+    <body>
+        <center><h1 style="padding:20px">Text Editor</h1></center>
+        <div class="editor"></div>
+        <script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.notebook.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.editor').notebook({
+                    autoFocus: true,
+                    placeholder: 'Write here...'
+                });
+            });
+        </script>
+        <center><span>Enter the link using anchor in popup, click done and those links would be displayed below.</span></center>
+        <center><button type="button" class="btn btn-default" onclick = "printLinks()">Done</button></center>
+        <p id = "done" style="padding-left:20px"></p>
+    </body>
+</html>
